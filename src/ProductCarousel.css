@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+.arrivals-container {
+  background: linear-gradient(
+    167deg,
+    rgba(36, 43, 60, 1),
+    rgba(122, 126, 137, 1) 49.48%,
+    rgba(22, 28, 42, 1) 100%
+  );
+  height: 100%;
+  padding: 5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.arrivals-heading {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(35px, calc(64 * (100vw / 1440)), 64px);
+  line-height: 1.1;
+  letter-spacing: 2.56px;
+  text-transform: uppercase;
+  margin: 0;
+  color: #fff;
+}
+
+.arrivals-subheading {
+  font-family: "Jost-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(22px, calc(25 * (100vw / 1440)), 25px);
+  line-height: 1.1;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: calc(20 * (100vw / 1440));
+}
+
+.heading-selection-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-selection {
+  display: flex;
+  background: #ffffff17;
+  border: 1px solid rgba(255, 255, 255, 0.69);
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.box-tab {
+  font-family: "Jost-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(12px, 1.25vw, 22px);
+  line-height: 1.1;
+  padding: 12px 60px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background-color: #0000;
+  color: #fff;
+}
+
+.btn-active-arrivals{
+    background-color: #fff;
+    color: #000;
+
+}
+
+.box-useless-right-1,.box-useless-right-2 {
+  background: linear-gradient(225deg, #d2dce587 3.15%, #989ca000 56.64%);
+  border-radius: 23px;
+  padding: 1px;
+  height: 20rem;
+  width: 20rem;
+
+  
+
+}
+.box-useless-right-1{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 1;
+
+}
+
+.box-useless-left-1,.box-useless-left-2{
+  border-radius: 23px;
+  padding: 1px;
+  height: 20rem;
+  width: 20rem;
+  background: linear-gradient(135deg, #a5a8ace8 2.42%, #a5a8ac00 65.79%);
+  
+
+}
+.box-useless-left-2{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+.box-before {
+  content: "";
+  display: block;
+  width: inherit;
+  height: inherit;
+  max-width: inherit;
+  max-height: inherit;
+  min-width: inherit;
+  min-height: inherit;
+  position: relative;
+  border-radius: 23px;
+  background-color: #283248;
+  height: 20rem;
+  width: 20rem;
+  background: linear-gradient(0deg, #38425a, #38425a),
+    linear-gradient(0deg, #293144, #293144),
+    linear-gradient(222.84deg, #a5a8ace8 2.42%, #a5a8ac00 65.79%);
+}
+
+.left-side-box{
+    position: relative;
+    display: flex;
+}
+.right-side{
+    position: relative;
+    display: flex;
+}
+.useless-box-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgContainerSlider{
+    max-width: 325px;
+    height: 447px;
+    position: relative;
+
+}
+.img-slider{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* .swiper-wrapper{
+    gap: 2rem;
+} */
+
+.swiper-container{
+    position: relative;
+    bottom: 23rem;
+
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: url("./assets/icon.svg") !important;
+    background-image: url("./assets/icon.svg") !important;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    left: -4rem;
+    position: absolute;
+
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: url("./assets/icon.svg") !important;
+    background-image: url("./assets/icon.svg") !important;
+    background-repeat: no-repeat;
+    transform: rotate(360deg);
+    left: 3rem;
+    position: absolute;
+}
+
+.swiper{
+    position: static !important;
+}
+.width-controller{
+    max-width: 1300px;
+    width: -webkit-fill-available;
+    height: 550px;
+}
+ .swiper-pagination-bullet-active {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+    
+        border: 1px solid #fff;
+        background-image: none !important;
+        width: 20px !important;
+        height: 20px !important;
+        padding: 0;
+        position: relative;
+        background-color: #0000 !important;
+        outline: unset !important;
+    
+}
+.swiper-pagination .swiper-pagination-bullet-active:after {
+    content: "";
+    background: #a7a7a7;
+    width: 10px;
+    height: 10px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #ababab5e !important;
+    margin: 0 10px 0 0 !important;
+    opacity: 1;
+}
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -3rem !important;
+}
+
+.card-bottom-chip{
+    position: absolute;
+    z-index: 1;
+    font-size: clamp(16px,1.25vw,18px);
+    line-height: 1.1;
+    min-height: clamp(48px, calc(50*(100vw / 1440)), 52px);
+    font-family: 'Jost-Regular', sans-serif;
+    font-size: clamp(10px,1.25vw,18px);
+    line-height: 1.1;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    bottom: 0px;
+    left: 31px;
+}
+
+.card-bottom-chip h3{
+    margin-bottom: 0;
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    width: 97%;
+    justify-content: space-between;
+}
+
+.id-txt{
+    display: inline-block;
+    font-size: clamp(12px,calc(14 * (100vw / 1440)),16px);
+    line-height: 1.1;
+    color: #fff;
+    background: #ffffff14;
+    padding: 3px 12px;
+    border-radius: 55px;
+    font-family: 'Jost-Medium', sans-serif;
+
+}
+.card-btn{
+    display: inline-block;
+    font-family: 'Jost-Medium', sans-serif;
+    padding: 16px 40px;
+    font-size: clamp(12px,calc(14 * (100vw / 1440)),16px);
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: #fff;
+    background: #ffffff14;
+    border: 1.16px solid rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+
+
+
+
+
+
+
+
